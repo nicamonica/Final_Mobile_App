@@ -1,0 +1,72 @@
+:root {
+  /* Background of the app */
+  --ion-background-color: #d1ddeb
+}
+
+/*middle header color*/
+.header2{
+  --background: #bacbdf;
+    height: 60px;
+}
+
+/* top header color*/
+
+.main-header{
+  --background: #9aabc5;
+    height: 80px;
+}
+
+/* index page buttons*/
+.index-btn-1{
+  --background: #ffffff;
+  --border-radius: 40px;
+  --padding: center;
+    margin-top: 150px;
+   
+}
+.index-btn-2{
+  --background: #ffffff;
+  --border-radius: 40px;
+  --padding: center;
+    margin-top: 15px;
+}
+
+/* nutrition page buttons*/
+.btn-nut{
+  --background: #ffffff;
+  --border-radius: 50px;
+  --opacity: 75%;
+  --background-hover: 100%;
+  --color: black;
+    width: 300px;
+
+}
+
+ion-icon{
+  float: right;
+  font-size: 32px;
+  color: white;
+  padding: none;
+  
+}
+
+ion-avatar{
+    width: 50px;
+    height: 50px;
+  --border-radius: 10px;
+}
+
+ion-title{
+  padding-top: 20px;
+  float: center;
+  
+}
+
+.main-title{
+font-size: 2em ;
+}
+
+.fab{
+  padding-top: 40px;
+  
+}

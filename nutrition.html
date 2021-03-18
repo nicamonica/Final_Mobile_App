@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ion-app>
+        
+        <ion-header>
+            <ion-toolbar class="main-header">
+                
+                <ion-title align="center" class="main-title">THE FRIDGE</ion-title>
+                  
+             </ion-toolbar>
+        </ion-header>
+
+        <!--home button-->
+        <ion-content fullscreen class="ion-padding">
+            <ion-fab horizontal="end" vertical="top" slot="fixed" edge>
+              <ion-fab-button color="light">
+                <ion-icon name="add" color="dark"></ion-icon>
+              </ion-fab-button>
+             
+              <ion-fab-list>
+
+                <ion-fab-button color="dark" href="index.html">
+                        <ion-icon name="home-outline"></ion-icon>      
+                </ion-fab-button>
+           
+                <ion-fab-button color="dark" href="product.html">
+                         <ion-icon name="fish-outline"></ion-icon>
+                </ion-fab-button>
+                           
+           </ion-fab-list>
+
+            </ion-fab>
+
+            <!--end home-->
+
+        <ion-header>
+            <ion-toolbar class="header2">
+            <ion-title align="center">NUTRITION INFORMATION</ion-title>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content fullscreen>
+
+           <!--list of products(buttons) and buttons for JS-->
+            
+        <ion-list>
+
+            <ion-item>
+                <ion-avatar slot="start">
+                    <img src="Pictures/avocado.png" alt="avocado">
+                </ion-avatar>
+                <ion-button class="btn-nut" id="btn-avocado">Avocado</ion-button>
+            </ion-item>
+
+            <ion-item>
+                <ion-avatar slot="start">
+                    <img src="Pictures/beans.png" alt="beans">
+                </ion-avatar>
+                <ion-button class="btn-nut" id="btn-beans">Beans</ion-button>
+            </ion-item>
+
+            <ion-item>
+                <ion-avatar slot="start">
+                    <img src="Pictures/cheese.png" alt="cheese">
+                </ion-avatar>
+                <ion-button class="btn-nut" id="btn-cheese">Cheese</ion-button>
+            </ion-item>
+
+            <ion-item>
+                <ion-avatar slot="start">
+                    <img src="Pictures/chicken.png" alt="chicken">
+                </ion-avatar>
+                <ion-button class="btn-nut" id="btn-chicken">Chicken</ion-button>
+            </ion-item>
+
+            <ion-item>
+                <ion-avatar slot="start">
+                    <img src="Pictures/egg.png" alt="eggs">
+                </ion-avatar>
+                <ion-button class="btn-nut" id="btn-eggs">Eggs</ion-button>
+            </ion-item>
+
+            <ion-item>
+                <ion-avatar slot="start">
+                    <img src="Pictures/fish.png" alt="fish">
+                </ion-avatar>
+                <ion-button class="btn-nut" id="btn-fish">Fish</ion-button>
+            </ion-item>
+
+            <ion-item>
+                <ion-avatar slot="start">
+                    <img src="Pictures/potato.png" alt="potatoes">
+                </ion-avatar>
+                <ion-button class="btn-nut" id="btn-potatoes">Potatoes</ion-button>
+            </ion-item>
+
+            <ion-item>
+                <ion-avatar slot="start">
+                    <img src="Pictures/tomato.png" alt="tomato">
+                </ion-avatar>
+                <ion-button class="btn-nut" id="btn-tomato">Tomato</ion-button>
+            </ion-item>
+
+
+        </ion-list>
+    </ion-content>
+    </ion-app>
+
+    <!--link to JS-->
+
+    <script src="app.js"></script></script>
+</body>
+</html>

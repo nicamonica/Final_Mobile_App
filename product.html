@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <ion-app>
+        <ion-header>
+              <ion-toolbar class="main-header">
+                <ion-title align="center" class="main-title">THE FRIDGE</ion-title>
+            </ion-toolbar>
+        </ion-header>
+
+        <!--home button-->
+        
+            <ion-fab class="fab" horizontal="end" vertical="top" slot="fixed" edge>
+              <ion-fab-button color="light">
+                <ion-icon name="add" color="dark"></ion-icon>
+              </ion-fab-button>
+             
+              <ion-fab-list>
+                <ion-fab-button color="dark" href="index.html">
+                        <ion-icon name="home-outline"></ion-icon>      
+                </ion-fab-button>
+           
+                <ion-fab-button color="dark" href="nutrition.html">
+                         <ion-icon name="list-circle-outline"></ion-icon>
+                </ion-fab-button>             
+           </ion-fab-list>
+
+          </ion-fab>
+
+            <!--end home-->
+
+    <ion-header>
+        <ion-toolbar class="header2">
+        <ion-title align="center">SEARCH BY PRODUCT</ion-title>
+        </ion-toolbar>
+    </ion-header>
+        
+    <!--products-->
+
+        <ion-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <a href="recipe.html"><img src="Pictures/beans.png" alt="beans" height="122" width="150"></a>
+                </ion-col>
+                <ion-col>
+                    <a href="recipe.html"><img src="Pictures/potato.png" alt="potatoes" height="122" width="150"></a>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+        </ion-content>
+
+        <ion-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <a href="recipe.html"><img src="Pictures/egg.png" alt="eggs" height="122" width="150"></a>
+                </ion-col>
+                <ion-col>
+                    <a href="recipe.html"><img src="Pictures/cheese.png" alt="cheese" height="122" width="150"></a>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+        </ion-content>
+
+        <ion-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <a href="recipe.html"><img src="Pictures/chicken.png" alt="chicken" height="122" width="150"></a>
+                </ion-col>
+                <ion-col>
+                    <a href="recipe.html"><img src="Pictures/fish.png" alt="fish" height="122" width="190"></a>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+        </ion-content>
+
+        <ion-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <a href="recipe.html"><img src="Pictures/avocado.png" alt="avocado" height="122" width="150"></a>
+                </ion-col>
+                <ion-col>
+                    <a href="recipe.html"><img src="Pictures/tomato.png" alt="tomato" height="122" width="150"></a>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+        </ion-content>
+        
+
+    </ion-app>
+
+</body>
+</html>
