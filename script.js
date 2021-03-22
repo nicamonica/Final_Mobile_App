@@ -4,7 +4,7 @@ let searchButton = document.querySelector("#search")
 
 searchButton.addEventListener("click", ()=>{
     console.log("button pressed")
-    sentApiRequest()
+    sendApiRequest()
 })
 
 // data from API
@@ -12,12 +12,22 @@ searchButton.addEventListener("click", ()=>{
 async function sendApiRequest(){
     let app_id = "a0794475"
     let api_key = "1359aae29ef76a84bcbe5c9944ae593d"
-    let response = await fetch(``);
+    let response = await fetch(`https://api.edamam.com/search?app_id=${app_id}&app_key=${api_key}&q=beans`);
     console.log(response)
+    let data = await response.json()
+    console.log(data)
+    useApiData(data)
 }
 
 //data received from API
 
 function useApiData(data){
+    document.querySelector("#search").innerHTML = `
+    <img src="${data.hits[0].recipe.image}" />
+                 <ion-card-title>${data.hits[0].recipe.label}</ion-card-title>
+                    <ion-card-content>
+                    <a href="${data.hits[0].recipe.url}"</a>
+                    </ion-card-content> 
+   `
 
 }
