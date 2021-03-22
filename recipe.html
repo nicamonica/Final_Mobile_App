@@ -14,38 +14,62 @@
 <body>
     <ion-app>
         <ion-header>
-            <ion-toolbar class="bg-color-main-header">
-                <ion-title>The Fridge</ion-title>
-                <a href="index.html"><ion-icon name="home"></ion-icon></a>
+            <ion-toolbar class="main-header">
+                <ion-title align="center" class="main-title">THE FRIDGE</ion-title>
             </ion-toolbar>
         </ion-header>
 
-        <ion-header>
-            <ion-toolbar class="bg-color-header2">
-            <ion-title>RECIPE</ion-title>
-            </ion-toolbar>
-        </ion-header>
+         <!--home button-->
+         <ion-content fullscreen class="ion-padding">
+            <ion-fab horizontal="end" vertical="top" slot="fixed" edge>
+              <ion-fab-button color="light">
+                <ion-icon name="add" color="dark"></ion-icon>
+              </ion-fab-button>
+             
+              <ion-fab-list>
 
-        <ion-content>
-            <ion-grid>
-              <ion-row>
-                <ion-col>
-                    <img src="Pictures/avocado.png" height="100" width="100">
-                </ion-col>
-                    <h2>Ingredients list</h2>
-                    
-              </ion-row>
-            </ion-grid>
-        </ion-content>
-        <ion-content>
-            <ion-grid>
-                <ion-row>
-                    <ion-col>
-                         <h2>Preparation</h2>  
-                     </ion-col>
-                </ion-row>
-            </ion-grid>
-        </ion-content>
+                <ion-fab-button color="dark" href="index.html">
+                        <ion-icon name="home-outline"></ion-icon>      
+                </ion-fab-button>
+           
+                <ion-fab-button color="dark" href="product.html">
+                         <ion-icon name="fish-outline"></ion-icon>
+                </ion-fab-button>
+
+                <ion-fab-button color="dark" href="nutrition.html">
+                    <ion-icon name="list-circle-outline"></ion-icon>
+           </ion-fab-button>
+                           
+           </ion-fab-list>
+
+            </ion-fab>
+
+            <!--end home-->
+
+            <ion-header>
+                <ion-toolbar class="header2">
+                <ion-title align="center">RECIPES</ion-title>
+                </ion-toolbar>
+            </ion-header>
+
+            <ion-header translucent>
+              </ion-header>
+              <ion-content fullscreen>
+                <ion-card>
+                  <img src="..." />
+                  <ion-card-header>
+                    <ion-card-title align="center">Recipe 1</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content align="center">
+                    Ingredients and preparation
+                  </ion-card-content>
+                </ion-card>
+              </ion-content>
+            
+          </body>
+
+          
+
     </ion-app>
     
     
