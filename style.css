@@ -190,3 +190,7 @@ font-size: 2em ;
   display: none;
 
 }
+
+.recipe{
+  --background: #9aabc5;
+}
