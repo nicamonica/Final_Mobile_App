@@ -21,9 +21,9 @@
   --background: #ffffff;
   --border-radius: 40px;
   --padding: center;
-    margin-top: 150px;
-   
+    margin-top: 150px;  
 }
+
 .index-btn-2{
   --background: #ffffff;
   --border-radius: 40px;
@@ -42,6 +42,7 @@
 
 }
 
+/* home button icons*/
 ion-icon{
   float: right;
   font-size: 32px;
@@ -50,6 +51,7 @@ ion-icon{
   
 }
 
+/* nutrition page images*/
 ion-avatar{
     width: 50px;
     height: 50px;
@@ -61,14 +63,17 @@ ion-title{
   float: center;
 }
 
+/* title The Fridge*/
 .main-title{
 font-size: 2em ;
 }
 
+/* fab button for product page*/
 .fab{
   padding-top: 40px;
 }
 
+/* modal background*/
 .bg-modal-avocado{
   width: 100%;
   height: 100%;
@@ -82,6 +87,7 @@ font-size: 2em ;
 
 }
 
+/* inside the modal*/
 .modal-content{
   width: 300px;
   height: 400px;
@@ -92,14 +98,15 @@ font-size: 2em ;
   position: relative;
 }
 
+/* close button in modal*/
 .close{
   position: absolute;
   top: 0;
   right: 15px;
   font-size: 30px;
-  
 }
 
+/* nutrition information for every modal on the page START*/
 .bg-modal-beans{
   width: 100%;
   height: 100%;
@@ -110,7 +117,6 @@ font-size: 2em ;
   justify-content: center;
   align-items: center;
   display: none;
-
 }
 
 .bg-modal-cheese{
@@ -123,7 +129,6 @@ font-size: 2em ;
   justify-content: center;
   align-items: center;
   display: none;
-
 }
 
 .bg-modal-chicken{
@@ -136,7 +141,6 @@ font-size: 2em ;
   justify-content: center;
   align-items: center;
   display: none;
-
 }
 
 .bg-modal-eggs{
@@ -149,7 +153,6 @@ font-size: 2em ;
   justify-content: center;
   align-items: center;
   display: none;
-
 }
 
 .bg-modal-fish{
@@ -162,7 +165,6 @@ font-size: 2em ;
   justify-content: center;
   align-items: center;
   display: none;
-
 }
 
 .bg-modal-potatoes{
@@ -175,7 +177,6 @@ font-size: 2em ;
   justify-content: center;
   align-items: center;
   display: none;
-
 }
 
 .bg-modal-tomato{
@@ -188,9 +189,22 @@ font-size: 2em ;
   justify-content: center;
   align-items: center;
   display: none;
+}
+/* END*/
 
+/* button for product which link product page with recipe page*/
+.product-btn{
+  --background: #9aabc5;
+  height: 20px;
+  width: 100%;
 }
 
-.recipe{
-  --background: #9aabc5;
+/* button with API*/
+.recipe-btn{
+  --background: #ffffff;
+  --border-radius: 50px;
+  --opacity: 75%;
+  --background-hover: 100%;
+  --color: black;
+    width: 300px;
 }
