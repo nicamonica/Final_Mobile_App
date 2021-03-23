@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe</title>
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe</title>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+  <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-    <ion-app>
-        <ion-header>
-            <ion-toolbar class="main-header">
-                <ion-title align="center" class="main-title">THE FRIDGE</ion-title>
-            </ion-toolbar>
-        </ion-header>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar class="main-header">
+        <ion-title align="center" class="main-title">THE FRIDGE</ion-title>
+      </ion-toolbar>
+    </ion-header>
 
-         <!--home button-->
-         <ion-content fullscreen class="ion-padding">
-            <ion-fab horizontal="end" vertical="top" slot="fixed" edge>
-              <ion-fab-button color="light">
-                <ion-icon name="add" color="dark"></ion-icon>
-              </ion-fab-button>
-             
-              <ion-fab-list>
+    <!--home buttons-->
+    <ion-content fullscreen class="ion-padding">
+      <ion-fab horizontal="end" vertical="top" slot="fixed" edge>
+        <ion-fab-button color="light">
+          <ion-icon name="add" color="dark"></ion-icon>
+        </ion-fab-button>
 
-                <ion-fab-button color="dark" href="index.html">
-                        <ion-icon name="home-outline"></ion-icon>      
-                </ion-fab-button>
-           
-                <ion-fab-button color="dark" href="product.html">
-                         <ion-icon name="fish-outline"></ion-icon>
-                </ion-fab-button>
+        <ion-fab-list>
 
-                <ion-fab-button color="dark" href="nutrition.html">
-                    <ion-icon name="list-circle-outline"></ion-icon>
-           </ion-fab-button>
-                           
-           </ion-fab-list>
+          <ion-fab-button color="dark" href="index.html">
+            <ion-icon name="home-outline"></ion-icon>
+          </ion-fab-button>
 
-            </ion-fab>
+          <ion-fab-button color="dark" href="product.html">
+            <ion-icon name="fish-outline"></ion-icon>
+          </ion-fab-button>
 
-            <!--end home-->
+          <ion-fab-button color="dark" href="nutrition.html">
+            <ion-icon name="list-circle-outline"></ion-icon>
+          </ion-fab-button>
 
-            <ion-header>
-                <ion-toolbar class="header2">
-                <ion-title align="center">RECIPES</ion-title>
-                </ion-toolbar>
-            </ion-header>
+        </ion-fab-list>
 
-            <ion-header translucent>
-              </ion-header>
-              <ion-content fullscreen>
-                <ion-card>
-                  <img src="..." />
-                  <ion-card-header>
-                    <ion-card-title align="center">Recipe 1</ion-card-title>
-                  </ion-card-header>
-                  <ion-card-content align="center">
-                    Ingredients and preparation
-                  </ion-card-content>
-                </ion-card>
-              </ion-content>
-            
-          </body>
+      </ion-fab>
 
-          
+      <!--end home button-->
 
-    </ion-app>
-    
-    
+      <ion-header>
+        <ion-toolbar class="header2">
+          <ion-title align="center">RECIPES</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <!--container for the recipe-->
+
+      <ion-toolbar>
+        <ion-title>
+          <ion-button class="recipe-btn" id="search">Search for a recipe</ion-button>
+        </ion-title>
+      </ion-toolbar>
+
+      <div id="content">
+        <ion-card align="center">
+          <img src="Pictures/beans.png" height="200px" />
+          <ion-card-header>
+            <ion-card-title>Beans</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Here you will find a recipe for beans.
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <!--container end-->
+
+
 </body>
+
+</ion-app>
+
+<!--JS for recipe-->
+
+<script src="script.js"></script>
+
+</body>
+
 </html>
